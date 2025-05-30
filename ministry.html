@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Ministry - Talitha Cumi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+    <style>
+        /* Critical CSS for above-the-fold content */
+        .loading-screen {
+            position: fixed; top: 0; left: 0; 
+            width: 100%; height: 100%; 
+            background: #4B0082;
+            display: flex; justify-content: center; align-items: center;
+            z-index: 9999;
+        }
+        .loading-spinner {
+            width: 50px; height: 50px;
+            border: 5px solid rgba(212, 175, 55, 0.3);
+            border-radius: 50%;
+            border-top-color: #D4AF37;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="Talitha Cumi Ministry Logo">
+                </a>
+                
+                <nav class="nav">
+                    <button class="hamburger" aria-label="Menu">
+                        <span class="hamburger__line"></span>
+                        <span class="hamburger__line"></span>
+                        <span class="hamburger__line"></span>
+                    </button>
+                    
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="ministry.html" class="nav__link active">Ministry</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">About Us</a></li>
+                        <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Ministry Hero Section -->
+    <section class="page-hero" style="background-image: url('assets/images/banner.jpg')">
+        <div class="page-hero__overlay"></div>
+        <div class="container">
+            <div class="page-hero__content fade-in">
+                <h1 class="page-hero__title">Our Ministry</h1>
+                <p class="page-hero__subtitle">Bringing the life-giving words of Christ to the world</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ministry Content -->
+    <main class="page-content">
+        <section class="ministry-section">
+            <div class="container">
+                <div class="ministry-grid">
+                    <div class="ministry-card fade-in">
+                        <div class="ministry-icon">📖</div>
+                        <h3>Bible Teaching</h3>
+                        <p>Sharing biblical knowledge with enthusiasm, helping others understand God's Word in practical ways.</p>
+                        <a href="contact.html" class="btn btn--small btn--gold">Learn More</a>
+                    </div>
+                    
+                    <div class="ministry-card fade-in">
+                        <div class="ministry-icon">🎓</div>
+                        <h3>Personal Development</h3>
+                        <p>Teaching valuable life skills and knowledge to help people grow in all areas of life.</p>
+                        <a href="contact.html" class="btn btn--small btn--gold">Learn More</a>
+                    </div>
+                    
+                    <div class="ministry-card fade-in">
+                        <div class="ministry-icon">🎥</div>
+                        <h3>YouTube Ministry</h3>
+                        <p>Creating video content to share biblical insights and personal growth teachings.</p>
+                        <a href="https://www.youtube.com/@talithacumi5-41" class="btn btn--small btn--gold">Visit Channel</a>
+                    </div>
+                    
+                    <div class="ministry-card fade-in">
+                        <div class="ministry-icon">🎵</div>
+                        <h3>Music Instruction</h3>
+                        <p>Teaching music as a form of worship and personal expression at our Bhaisepati location.</p>
+                        <a href="contact.html" class="btn btn--small btn--gold">Contact Us</a>
+                    </div>
+                </div>
+                
+                <div class="ministry-description fade-in">
+                    <h2 class="section-title">Our Mission</h2>
+                    <p>At Talitha Cumi Ministry, we are called to proclaim the life-giving message of Jesus Christ. Our name, taken from Mark 5:41, reminds us of Christ's power to bring resurrection life to all who hear His voice.</p>
+                    
+                    <blockquote class="verse-quote">
+                        <p>"The Spirit of the Lord is upon me, because he has anointed me to proclaim good news to the poor. He has sent me to proclaim liberty to the captives and recovering of sight to the blind, to set at liberty those who are oppressed." <span>- Luke 4:18</span></p>
+                    </blockquote>
+                    
+                    <div class="cta-box">
+                        <h3>Music & Tuition Classes Available</h3>
+                        <p>We offer music classes and tuition at our Bhaisepati location. Contact us for more information.</p>
+                        <a href="contact.html" class="btn btn--gold">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <img src="assets/images/logo.png" alt="Talitha Cumi Ministry Logo" class="footer-logo">
+                <p class="footer-location">Bhaisepati, Lalitpur</p>
+                <p class="copyright">© 2025 Talitha Cumi Ministry. All Rights Reserved.</p>
+                <p class="contact-email">Email: <a href="mailto:studybible376@gmail.com">studybible376@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+                  </html>
